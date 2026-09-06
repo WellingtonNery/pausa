@@ -18,14 +18,13 @@ O projeto foi inicialmente prototipado no Figma para definir a interface e o flu
 
 ## 🛠️ TECNOLOGIAS
 
-* Swift
-* SwiftUI
-* Xcode
+* Flutter
+* Dart
 
 ## 📚 O QUE ESTOU APRENDENDO
 
 * Desenvolvimento de aplicativos mobile
-* Swift e SwiftUI
+* Dart e Flutter
 * UI/UX e design de interação
 
 ## 🚧 STATUS
