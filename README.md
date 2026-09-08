@@ -1,17 +1,36 @@
-# pausa
+# PAUSA 🌱
 
-A new Flutter project.
+Um aplicativo para registrar como você está se sentindo e acompanhar o seu humor.
 
-## Getting Started
+## 📱 SOBRE O PROJETO
 
-This project is a starting point for a Flutter application.
+PAUSA é um projeto experimental desenvolvido para explorar desenvolvimento mobile, UI/UX e a criação de uma experiência digital centrada no usuário.
 
-A few resources to get you started if this is your first Flutter project:
+A ideia é permitir que o usuário registre seu humor e o que influenciou aquele momento, criando um histórico ao longo do tempo.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 🎨 DESIGN
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+O projeto foi inicialmente prototipado no Figma para definir a interface e o fluxo de interação.
+
+<img width="1890" height="852" alt="PAUSA" src="https://github.com/user-attachments/assets/e9c66fae-5924-4b9b-a314-7128ee02f7d9" />
+
+🔗 [Protótipo no Figma](https://www.figma.com/design/YUY5chQyRgP1jBIWEjVuNC/PAUSA?node-id=6-391&t=jn5TC6CPf6oaFKmh-1)
+
+## 🛠️ TECNOLOGIAS
+
+* Flutter
+* Dart
+
+## 📚 O QUE ESTOU APRENDENDO
+
+* Desenvolvimento de aplicativos mobile
+* Dart e Flutter
+* UI/UX e design de interação
+
+## 🚧 STATUS
+
+Em desenvolvimento.
+
+## 👤 AUTOR
+
+Wellington Nery
