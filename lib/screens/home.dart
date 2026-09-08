@@ -52,7 +52,8 @@ class Home extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'KyivTypeSans',
                     fontWeight: FontWeight.w300,
-                    fontSize: 25
+                    fontSize: 25,
+                    color: Colors.grey
                     ),
                 ),
                 
@@ -69,7 +70,8 @@ class Home extends StatelessWidget {
       style: TextStyle(
         fontFamily: 'KyivTypeSans',
         fontWeight: FontWeight.w300,
-        fontSize: 25
+        fontSize: 25,
+        color: Colors.grey,
       )
       ),
 
