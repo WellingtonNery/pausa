@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
-import 'dart:convert';
 import 'influencia.dart';
 
 class Seletor extends StatelessWidget {
-  const Seletor({super.key});
+  final bool trocandoEmocao;
+  
+  const Seletor({super.key, this.trocandoEmocao = false});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,7 @@ class Seletor extends StatelessWidget {
 
           SizedBox(height: 50),
 
-          const EmotionCircle(),
+          EmotionCircle(trocandoEmocao: trocandoEmocao),
 
           SizedBox(height: 135),
 
@@ -38,8 +39,10 @@ class Seletor extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'KyivTypeSans',
             fontWeight: FontWeight.w300,
-            fontSize: 25
-          )
+            fontSize: 25,
+            color: Colors.grey
+          ),
+          
           ), 
         ],
       ),
@@ -48,7 +51,9 @@ class Seletor extends StatelessWidget {
 }
 
 class EmotionCircle extends StatelessWidget {
-  const EmotionCircle({super.key});
+  final bool trocandoEmocao;
+
+  const EmotionCircle({super.key, required this.trocandoEmocao});
 
   @override
   Widget build(BuildContext context) {
@@ -81,6 +86,7 @@ class EmotionCircle extends StatelessWidget {
               size: size,
               radius: radius,
               itemSize: itemSize,
+              trocandoEmocao: trocandoEmocao,
             ),
         ],
       ),
@@ -95,6 +101,7 @@ class EmotionCircle extends StatelessWidget {
     required double size,
     required double radius,
     required double itemSize,
+    required bool trocandoEmocao,
   }) {
     final double angleRad = angleDegrees * pi / 180;
     final double centerX = size / 2;
@@ -107,49 +114,19 @@ class EmotionCircle extends StatelessWidget {
       left: x,
       top: y,
       child: GestureDetector(
-      onTap: () {
-        final captura = CaptureMotion(
-          emocao: nome,
-          horario: DateTime.now(),
-        );
-
-        final jsonString = jsonEncode(captura.toJson());
-
+      onTap: () { if (trocandoEmocao) {
+        Navigator.pop(context, nome);
+        } else {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => Influencia(emocaoJson: jsonString),
+            builder: (context) => Influencia(emocao: nome),
           ),
         );
+      };
       },
       child: Image.asset(asset, width: itemSize),
     ),
-    );
-  }
-}
-
-//
-
-class CaptureMotion {
-  final String emocao;
-  final DateTime horario;
-
-  CaptureMotion({
-    required this.emocao,
-    required this.horario,
-  });
-
-  Map<String, dynamic> toJson() {
-    return {
-      'emocao': emocao,
-      'horario': horario.toIso8601String(),
-    };
-  }
-
-  factory CaptureMotion.fromJson(Map<String, dynamic> json) {
-    return CaptureMotion(
-      emocao: json['emocao'],
-      horario: DateTime.parse(json['horario']),
     );
   }
 }
