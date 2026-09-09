@@ -11,3 +11,8 @@ Future<void> salvarCaptureMotion(CaptureMotion captura) async {
 
   await prefs.setStringList('capturas', listaAtual);
 }
+
+Future<void> limparCapturas() async {
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.remove('capturas');
+}

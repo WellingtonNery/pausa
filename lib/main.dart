@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'screens/home.dart';
+import 'services/storage_service.dart'; // ajuste pro caminho real do seu arquivo
 
-void main() {
+void main(){
+
   runApp(const PausaApp());
 }
 

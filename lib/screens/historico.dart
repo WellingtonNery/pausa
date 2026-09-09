@@ -57,7 +57,7 @@ class _HistoricoState extends State<Historico> {
                         crossAxisCount: 4,
                         mainAxisSpacing: 24,
                         crossAxisSpacing: 16,
-                        childAspectRatio: 0.65,
+                        childAspectRatio: 0.55,
                       ),
                       itemCount: capturas.length,
                       itemBuilder: (context, index) {
@@ -70,6 +70,12 @@ class _HistoricoState extends State<Historico> {
                               height: 70,
                             ),
                             const SizedBox(height: 4),
+
+                             Text(
+                              '${captura.influencia}',
+                              style: TextStyle(fontSize: 12),
+                            ),
+
                             Text(
                               DateFormat('dd/MM').format(captura.horario),
                               style: TextStyle(fontSize: 10),

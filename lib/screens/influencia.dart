@@ -42,6 +42,8 @@ class _InfluenciaState extends State<Influencia> {
           ),
           ),
 
+          SizedBox(height: 30),
+
           GestureDetector(
             onTap: () async {
               final resultado = await Navigator.push(
@@ -61,7 +63,8 @@ class _InfluenciaState extends State<Influencia> {
         children: [
         Image.asset(
         'assets/emocoes/$emocaoAtual.png',
-        width: 200,
+        width: 180,
+        fit: BoxFit.contain,
         ),
 
         SizedBox(height: 10),
@@ -141,12 +144,13 @@ Widget _buildInfluencia({
 }
 
 final influencias = [
-  {'asset': 'assets/influencias/placeholder.png', 'nome': 'trabalho'},
-  {'asset': 'assets/influencias/placeholder.png', 'nome': 'estudos'},
-  {'asset': 'assets/influencias/placeholder.png', 'nome': 'amor'},
-  {'asset': 'assets/influencias/placeholder.png', 'nome': 'hobby'},
-  {'asset': 'assets/influencias/placeholder.png', 'nome': 'familia'},
-  {'asset': 'assets/influencias/placeholder.png', 'nome': 'amigos'},
-  {'asset': 'assets/influencias/placeholder.png', 'nome': 'esporte'},
-  {'asset': 'assets/influencias/placeholder.png', 'nome': 'sono'},
+  {'asset': 'assets/influencias/trabalho.png', 'nome': 'Trabalho'},
+  {'asset': 'assets/influencias/estudos.png', 'nome': 'Estudos'},
+  {'asset': 'assets/influencias/amor.png', 'nome': 'Amor'},
+  {'asset': 'assets/influencias/hobby.png', 'nome': 'Hobby'},
+  {'asset': 'assets/influencias/familia.png', 'nome': 'Familia'},
+  {'asset': 'assets/influencias/amigos.png', 'nome': 'Amigos'},
+  {'asset': 'assets/influencias/esporte.png', 'nome': 'Esporte'},
+  {'asset': 'assets/influencias/sono.png', 'nome': 'Sono'},
 ];
+
