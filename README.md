@@ -4,9 +4,11 @@ Um aplicativo para registrar como você está se sentindo e acompanhar o seu hum
 
 ## Sobre o Projeto
 
-PAUSA é um projeto experimental desenvolvido para explorar desenvolvimento mobile, UI/UX e a criação de uma experiência digital centrada no usuário.
+PAUSA é um aplicativo mobile que permite ao usuário registrar seu humor e o que influenciou aquele momento, criando um histórico ao longo do tempo.
 
-A ideia é permitir que o usuário registre seu humor e o que influenciou aquele momento, criando um histórico ao longo do tempo.
+## Objetivo
+
+O projeto foi desenvolvido de forma experimental para explorar desenvolvimento mobile, UI/UX e a criação de uma experiência digital centrada no usuário.
 
 ## Funcionalidades
 
@@ -15,6 +17,11 @@ A ideia é permitir que o usuário registre seu humor e o que influenciou aquele
 * Histórico de humor ao longo do tempo
 * Interface pensada a partir de prototipagem no Figma
 
+## Tecnologias Utilizadas
+
+* Flutter
+* Dart
+
 ## Design
 
 O projeto foi inicialmente prototipado no Figma para definir a interface e o fluxo de interação.
@@ -22,11 +29,6 @@ O projeto foi inicialmente prototipado no Figma para definir a interface e o flu
 <img width="1890" height="852" alt="PAUSA" src="https://github.com/user-attachments/assets/e9c66fae-5924-4b9b-a314-7128ee02f7d9" />
 
 🔗 [Protótipo no Figma](https://www.figma.com/design/YUY5chQyRgP1jBIWEjVuNC/PAUSA?node-id=6-391&t=jn5TC6CPf6oaFKmh-1)
-
-## Tecnologias
-
-* Flutter
-* Dart
 
 ## O Que Estou Aprendendo
 
@@ -58,3 +60,7 @@ O projeto foi inicialmente prototipado no Figma para definir a interface e o flu
 ## Autor
 
 Wellington Nery G. Costa - [GitHub](https://github.com/WellingtonNery)
+
+## Direitos
+
+Todos os direitos reservados.
