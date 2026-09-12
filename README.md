@@ -1,14 +1,21 @@
-# PAUSA 🌱
+# PAUSA
 
 Um aplicativo para registrar como você está se sentindo e acompanhar o seu humor.
 
-## 📱 SOBRE O PROJETO
+## Sobre o Projeto
 
 PAUSA é um projeto experimental desenvolvido para explorar desenvolvimento mobile, UI/UX e a criação de uma experiência digital centrada no usuário.
 
 A ideia é permitir que o usuário registre seu humor e o que influenciou aquele momento, criando um histórico ao longo do tempo.
 
-## 🎨 DESIGN
+## Funcionalidades
+
+* Registro do humor atual do usuário
+* Anotação do que influenciou aquele momento/sentimento
+* Histórico de humor ao longo do tempo
+* Interface pensada a partir de prototipagem no Figma
+
+## Design
 
 O projeto foi inicialmente prototipado no Figma para definir a interface e o fluxo de interação.
 
@@ -16,21 +23,38 @@ O projeto foi inicialmente prototipado no Figma para definir a interface e o flu
 
 🔗 [Protótipo no Figma](https://www.figma.com/design/YUY5chQyRgP1jBIWEjVuNC/PAUSA?node-id=6-391&t=jn5TC6CPf6oaFKmh-1)
 
-## 🛠️ TECNOLOGIAS
+## Tecnologias
 
 * Flutter
 * Dart
 
-## 📚 O QUE ESTOU APRENDENDO
+## O Que Estou Aprendendo
 
 * Desenvolvimento de aplicativos mobile
 * Dart e Flutter
 * UI/UX e design de interação
 
-## 🚧 STATUS
+## Como Executar
 
-Em desenvolvimento.
+1. Tenha o Flutter SDK instalado ([guia oficial](https://docs.flutter.dev/get-started/install)).
+2. Clone o repositório:
+   ```
+   git clone https://github.com/WellingtonNery/pausa
+   ```
+3. Entre na pasta do projeto e instale as dependências:
+   ```
+   cd pausa
+   flutter pub get
+   ```
+4. Rode o app:
+   ```
+   flutter run
+   ```
 
-## 👤 AUTOR
+## Status do Projeto
 
-Wellington Nery
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+
+## Autor
+
+Wellington Nery G. Costa - [GitHub](https://github.com/WellingtonNery)
